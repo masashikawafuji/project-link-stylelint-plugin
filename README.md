@@ -1,10 +1,12 @@
 # Project Links Stylelint Plugin
 
-## ⚠ 注意点️
+## ⚠ 注意点️ / Warning
 
 絶対パス`rel://`のみ対応しています。`project://`はまだリント出来ません。
 
 まだテストは書いていません。
+
+This repository is still in development. It's uncertain whether to work correctly in all situations.
 
 ## 使い方
 
@@ -20,7 +22,7 @@ cd <任意のディレクトリ> && yarn
 
 ```json
 {
-  "plugins": ["/path/to/lib/index.js"],
+  "plugins": ["<このプラグインのディレクトリ>/lib/index.js"],
   "rules": {
     "plugin/project-links": true
   }
