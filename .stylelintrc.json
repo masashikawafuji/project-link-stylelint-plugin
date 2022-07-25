@@ -1,6 +1,6 @@
 {
   "extends": "stylelint-config-standard-scss",
-  "plugins": ["./dist/index.js"],
+  "plugins": ["./lib/index.js"],
   "rules": {
     "plugin/project-links": true
   }

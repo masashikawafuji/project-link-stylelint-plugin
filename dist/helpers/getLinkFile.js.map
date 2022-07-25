@@ -1,1 +1,0 @@
-{"version":3,"file":"getLinkFile.js","sourceRoot":"","sources":["../../src/helpers/getLinkFile.ts"],"names":[],"mappings":";;;AAEA,oFAAoD;AAEpD,SAAwB,WAAW,CAAC,OAAgB;IAClD,MAAM,EAAE,IAAI,EAAE,GAAG,OAAO,CAAC;IACzB,OAAO,IAAI,CAAC,OAAO,CAAC,KAAK,EAAE,EAAE,CAAC,CAAC,OAAO,CAAC,2BAAiB,EAAE,EAAE,CAAC,CAAC;AAChE,CAAC;AAHD,8BAGC"}
