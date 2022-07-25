@@ -1,5 +1,7 @@
 # Project Links Stylelint Plugin
 
+Sass ファイル内の [Project Links](https://marketplace.visualstudio.com/items?itemName=KyleDavidE.vscode-project-links) が正しいかチェックする Stylelint Plugin。
+
 ## ⚠ 注意点️ / Warning
 
 絶対パス`rel://`のみ対応しています。`project://`はまだリント出来ません。
@@ -22,9 +24,9 @@ cd <任意のディレクトリ> && yarn
 
 ```json
 {
-  "plugins": ["<このプラグインのディレクトリ>/lib/index.js"],
+  "plugins": ["<このプラグインのディレクトリ>/lib/index.js"], // 相対パスか絶対パス。`~`等の省略形はエラーになります。
   "rules": {
-    "plugin/project-links": true
+    "plugin/project-links": true // boolean
   }
 }
 ```
