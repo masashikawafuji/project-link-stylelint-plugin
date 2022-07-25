@@ -1,0 +1,30 @@
+{
+  "name": "project-links-stylelint-plugin",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Masashi Kawafuji",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "tsc-watch --onSuccess \"stylelint ./**/*.scss\""
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.39",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.6.2",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "ts-node": "^10.8.1",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "postcss": "^8.4.14",
+    "stylelint": "^14.9.1",
+    "tslib": "^2.4.0"
+  }
+}
