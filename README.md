@@ -4,7 +4,7 @@ Sass ファイル内の [Project Links](https://marketplace.visualstudio.com/ite
 
 ## ⚠ 注意点️ / Warning
 
-絶対パス`rel://`のみ対応しています。`project://`はまだリント出来ません。
+相対パス`rel://`のみ対応しています。`project://`はまだリント出来ません。
 
 まだテストは書いていません。
 
