@@ -5,6 +5,8 @@ import isProjectLink from "./helpers/isProjectLink";
 import getLinkFile from "./helpers/getLinkFile";
 import getAbsolutePath from "./helpers/getAbsolutePath";
 
+type PrimaryOption = boolean;
+
 const { report, ruleMessages, validateOptions } = utils;
 
 const ruleName = "plugin/project-links";
@@ -12,14 +14,14 @@ const messages = ruleMessages(ruleName, {
   fileExistance: (file) => `File: "${file as string}"は存在しません。`,
 });
 
-const rule: Plugin = (primaryOption) => {
+const rule: Plugin<PrimaryOption> = (primaryOption) => {
   return (root, result) => {
     const validOptions = validateOptions(result, ruleName, {
       actual: primaryOption,
       possible: (value) => typeof value === "boolean",
     });
 
-    if (!validOptions) return;
+    if (!validOptions || !primaryOption) return;
 
     root.walkComments((comment) => {
       if (isProjectLink(comment)) {
